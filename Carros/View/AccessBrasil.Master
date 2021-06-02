@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AccessBrasil.master.cs" Inherits="Carros.View.AccessBrasil" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="Default.aspx">Access Brasil</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="CadastrarVeiculo.aspx">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CriarMarca.aspx">Marca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CriarModelo.aspx">Modelo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Editar.aspx">Editar Veículo</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>
